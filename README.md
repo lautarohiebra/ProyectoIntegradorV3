@@ -1,9 +1,11 @@
-# Proyecto integrador - Educacion IT
+# Pasos para levantar el ambiente
 
-# Mercado Pago
+1. Bajar el zip
 
-<https://www.npmjs.com/package/mercadopago>
+2. Copian .env.example
 
-```sh
-npm i mercadopago
-```
+3. Lo renombran a .env
+
+4. Le agregan el puerto.
+
+5. npm run dev
