@@ -28,8 +28,8 @@
         <td class="cantidad">
             {{cantidad}}
             <div class="contenedorBotonesAgregarQuitar">
-            <button id="quitarUno" onclick="carritoController.quitarUno({{id}})">-</button>
-            <button id="agregarUno" onclick="carritoController.sumarUno({{id}})">+</button>
+            <button id="quitarUno" onclick="carritoController.quitarUno('{{_id}}')">-</button>
+            <button id="agregarUno" onclick="carritoController.sumarUno('{{_id}}')">+</button>
             </div>
         </td>
 
@@ -40,7 +40,7 @@
         {{/if}}
 
         <td>
-          <button class="botonBorrarProducto" onclick="carritoController.borrarProductoCarrito({{id}})">Borrar</button>
+          <button class="botonBorrarProducto" onclick="carritoController.borrarProductoCarrito('{{_id}}')">Borrar</button>
         </td>
       </tr>
     {{/each}}

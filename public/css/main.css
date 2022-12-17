@@ -865,6 +865,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  /* DRAG AND DROP */
 }
 .container-alta h1, .container-alta h2 {
   color: #F2F4FF;
@@ -936,6 +937,34 @@ body {
 .container-alta #listado-productos .detalles {
   max-width: 400px;
   font-weight: 400;
+  overflow: scroll;
+}
+.container-alta #drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 300px;
+  margin: 25px 0;
+  padding: 20px;
+}
+.container-alta .button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 1px solid #ccc;
+}
+.container-alta #foto {
+  display: none;
+}
+.container-alta #gallery img {
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.container-alta #drop-area.highlight {
+  border-color: purple;
 }
 
 .section-carrito {
