@@ -1,0 +1,90 @@
+.container-alta {
+    padding: 10px;
+    margin: 15px 15px;
+    background-color: $color2;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.308);
+    border-radius: 15px;
+    font-weight: 700;
+    width: fit-content;
+
+    h1, h2 {
+        color: $color2;
+        background-color: $color5;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div, input {
+        width: 300px;
+        display: block;
+        margin-bottom: 1px;
+        padding: 5px;
+    }
+    
+    button {
+        display: block;
+        margin-top: 20px;
+        width: 80px;
+        background-color: $color5;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+        height: 20px;
+
+        &:hover {
+            background-color: $color4;
+        }
+
+        &:disabled {
+            background-color: rgb(118, 129, 163);
+        }
+    }
+
+
+    input[type="checkbox"] {
+        display: inline;
+        width: 15px;
+        height: 15px;
+        margin-top: 10px;
+    }
+
+    form div {
+        border: 2px solid $color1;
+        background-color: $color5;
+        color: $color1;
+        margin: 2px 0 10px 0;
+        border-radius: 5px;
+        display: none;
+    }
+
+    table,th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    #listado-productos {
+        width: 100%;
+        .data{
+            height: 50px;
+            max-height: 50px;
+        }
+        .headers {
+            background-color: $color5;
+            color: $color1;
+            height: 40px;
+        }
+
+        .detalles{
+            max-width: 400px;
+            font-weight: 400;
+        }
+    }
+}

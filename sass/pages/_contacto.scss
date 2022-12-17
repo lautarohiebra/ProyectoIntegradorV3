@@ -1,0 +1,151 @@
+.section-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color2;
+    margin: 0 5%;
+    padding: 20px;
+    border-bottom: 5px solid $color4;
+
+    &__medios-contacto p{
+        font-size: 16px;
+        font-weight: 800;
+        color: $color3;
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+
+    &__medios-contacto span{
+        font-size: 14px;
+        font-weight: 300;
+        color: $color3;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    &__form input, select, textarea{
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.315);
+        padding: 2px 10px;
+        border-radius: 3px;
+
+        &:hover{
+            filter: invert(0.2);
+        }
+
+        &:focus{
+            filter: invert(0)
+        }
+    }
+
+    &__form .motivo{
+        width: 100%;
+    }
+
+    &__form .textarea label{
+        width: 80%;
+    }
+
+    &__form textarea{
+        height: 100px;
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+    
+    &__form label{
+        display: inline-block;
+        width: 80px;
+    }
+    &__form #motivo{
+        width: 80%;
+    }
+    
+    &__form #info-consulta{
+        width: 100%;
+    }
+
+    &__form p, label{
+        font-size: 16px;
+        font-weight: 800;
+        color: $color3;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    &__form button{
+        background-color: #252627;
+        border-radius: 15px;
+        border: none;
+        padding: 2px 15px;
+        color: white;
+        border-top: 2px solid $color4;
+        border-left: 2px solid $color4;
+        border-bottom: 2px solid $color5;
+        border-right: 2px solid $color5;
+        width: fit-content;
+        height: 30px;
+        margin-left: 45%;
+        margin-top: 20px;
+
+        &:hover{
+            background-color: $color1;
+            color: $color5;
+            border-top: 2px solid $color5;
+            border-left: 2px solid $color5;
+            border-bottom: 2px solid $color4;
+            border-right: 2px solid $color4;
+            transition: 0.2s all;
+        }
+    }
+    
+
+    &__h1{color: $color2;
+        background-color: $color5;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+    }
+
+    &__h2{
+        color: $color4;
+        font-size: 18px;
+        background-color: $color1;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    &__redes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    &__card-redes{
+        width: 25%;
+        height: 100%;
+        background-color: $color1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        box-shadow:
+        3px 3px $color5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $color5 2px solid;
+
+        &:hover{
+            box-shadow: -3px 3px $color4,
+            -3px 3px $color5;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-color: $color4;
+        }
+    }
+}
+

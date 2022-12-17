@@ -1,0 +1,59 @@
+{{#if carrito.length}}
+<button id="botonCerrarCarrito" onclick="carritoController.cerrarCarrito()">X</button>
+<div class="contenedor-tabla-carrito">
+  <table class="carrito__table">
+    <tr class="tr-principales">
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Marca</th>
+      <th>Foto</th>
+      <th>Cantidad</th>
+      <th>Envio</th>
+      <th>Acción</th>
+    </tr>
+
+    {{#each carrito}}
+      <tr>
+        <td>{{nombre}}</td>
+        <td>${{precioTotal}}</td>
+        <td>{{marca}}</td>
+        <td>
+          <img
+            style="display:block; margin: 0 auto;"
+            src="{{foto}}"
+            width="50"
+            alt="{{nombre}}"
+          />
+        </td>
+        <td class="cantidad">
+            {{cantidad}}
+            <div class="contenedorBotonesAgregarQuitar">
+            <button id="quitarUno" onclick="carritoController.quitarUno({{id}})">-</button>
+            <button id="agregarUno" onclick="carritoController.sumarUno({{id}})">+</button>
+            </div>
+        </td>
+
+        {{#if envio}}
+          <td>Si</td>
+        {{else}}
+          <td>No</td>
+        {{/if}}
+
+        <td>
+          <button class="botonBorrarProducto" onclick="carritoController.borrarProductoCarrito({{id}})">Borrar</button>
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
+<div class="contenedor-total">
+    <h3 class="totales">Total items:</h3>
+    <h3 class="totales">Total a pagar: $</h3>
+  </div>
+      <div class="contenedorBotonCarrito">
+    <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar carrito</button>
+  </div>
+  
+{{else}}
+  <h2 class="carritoVacio-mensaje">El carrito está vacío</h2>
+{{/if}}

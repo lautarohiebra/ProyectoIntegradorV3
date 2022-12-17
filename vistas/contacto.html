@@ -1,0 +1,46 @@
+<main>
+    <section class="section-form">
+      <h1 class="section-form__h1">Contacto</h1>
+        <h2 class="section-form__h2">Nuestras redes sociales</h2>
+          <div class="section-form__redes">
+            <div class="section-form__card-redes facebook"><a target="_blank" href="https://www.facebook.com/"><img src="img/svgs/facebook.svg" alt=""></a></div>
+            <div class="section-form__card-redes instagram"><a target="_blank" href="https://www.instagram.com/"><img src="img/svgs/instagram.svg" alt=""></a></div>
+            <div class="section-form__card-redes twitter"><a target="_blank" href="https://twitter.com/"><img src="img/svgs/twitter.svg" alt=""></a></div>
+          </div>
+          
+          <div class="section-form__medios-contacto">
+            <h2 class="section-form__h2">Medios de contacto</h2>
+              <p>Teléfono: <span>*Espacio para teléfono*</span></p>
+              <p>Email: <span>alpha@xmail.com</span></p>
+              <p>Whatsapp: <span>*Espacio para datos de contacto*</span></p>
+          </div>
+            
+          <h2 class="section-form__h2">Realiza una consulta:</h2>
+          <form class="section-form__form" action="#">
+            <p class="label"><label for="nombre"> Nombre: 
+                <input class="campos-contacto" required type="text" id="nombre"></label>
+            </p>
+            <p class="label"><label for="apellido"> Apellido: 
+                <input class="campos-contacto" required type="text" id="apellido"></label>
+            </p>
+            <p class="label"><label for="email">Email: 
+                <input class="campos-contacto" required placeholder="ejemplo@gmail.com" type="email" id="email"></label>
+            </p>
+            <p class="label"><label for="motivo" class="motivo"> Seleccione el motivo de su consulta
+                <select class="campos-contacto" required id="motivo">
+                    <option id="seleccion" value="">Seleccione un tema</option>
+                    <option id="consulta-producto" value="consulta-producto">Productos (Stock, Precios, Presupuestos, etc.)</option>
+                    <option id="consulta-medio-de-pago" value="consulta-producto">Medios de pago</option>
+                    <option id="consulta-posventa" value="consulta-producto">Posventa</option>
+                    <option id="consulta-garantia" value="consulta-producto">Garantía</option>
+                    <option id="consulta-envios" value="consulta-producto">Envíos</option>
+                    <option id="consulta-otro" value="consulta-producto">Otro</option>
+                </select>
+              </label>
+            </p>
+            <p class="label textarea"><label for="info-consulta">¿En que podemos ayudarte?
+                <textarea class="campos-contacto"  id="info-consulta" required></textarea></label></p>
+            <button id="submit-consulta" type="submit" >Enviar</button>
+          </form>
+        </section>
+      </main>
