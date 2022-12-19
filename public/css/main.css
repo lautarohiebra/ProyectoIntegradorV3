@@ -717,7 +717,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
   border-radius: 15px 15px 0 0;
-  background-color: #6320EE;
+  background-color: #8075FF;
   /* IMAGEN */
   /* TITULO */
   /* PARRAFO CARDS */
@@ -727,12 +727,12 @@ body {
   transform: scale(1.03) skewX();
   transform-origin: bottom;
   box-shadow: 0 7px 15px rgba(255, 255, 255, 0.877);
-  transition: all 0.2s;
+  transition: all 0.5s;
   cursor: auto;
 }
 .card__image-container {
   height: 200px;
-  background-color: #6320EE;
+  background-color: #FFF9FB;
   overflow: hidden;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
   clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
@@ -740,14 +740,14 @@ body {
 .card:hover .card__image-container, .card:focus .card__image-container {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
   clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .card__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .card:hover .card__image, .card:focus .card__image {
   transform: scale(1.4) rotate(5deg);
@@ -855,6 +855,7 @@ body {
   text-decoration: none;
 }
 
+/* Form Alta */
 .container-alta {
   padding: 10px;
   margin: 15px 15px;
@@ -862,10 +863,9 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
   border-radius: 15px;
   font-weight: 700;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  /* DRAG AND DROP */
+  width: 90%;
+  /* Tabla Alta */
+  /* Drop Area */
 }
 .container-alta h1, .container-alta h2 {
   color: #F2F4FF;
@@ -879,11 +879,23 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.container-alta label span {
+  color: #8075FF;
+  font-size: 16px;
+}
 .container-alta div, .container-alta input {
   width: 300px;
   display: block;
   margin-bottom: 1px;
   padding: 5px;
+}
+.container-alta .data-validation {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.048);
+  border: none;
+  width: 250px;
+}
+.container-alta .data-validation:hover, .container-alta .data-validation:focus {
+  filter: brightness(0.9);
 }
 .container-alta button {
   display: block;
@@ -907,7 +919,7 @@ body {
   height: 15px;
   margin-top: 10px;
 }
-.container-alta form div {
+.container-alta form .mensaje-validacion {
   border: 2px solid #FFF9FB;
   background-color: #8075FF;
   color: #FFF9FB;
@@ -916,14 +928,21 @@ body {
   display: none;
 }
 .container-alta table, .container-alta th, .container-alta td {
-  border: 1px solid black;
+  border: 1px solid white;
   border-collapse: collapse;
+}
+.container-alta th, .container-alta td {
+  padding: 5px 10px;
+}
+.container-alta td {
+  text-align: center;
 }
 .container-alta table {
   width: 90%;
 }
 .container-alta #listado-productos {
   width: 100%;
+  overflow-x: scroll;
 }
 .container-alta #listado-productos .data {
   height: 50px;
@@ -937,7 +956,8 @@ body {
 .container-alta #listado-productos .detalles {
   max-width: 400px;
   font-weight: 400;
-  overflow: scroll;
+  overflow-y: scroll;
+  font-size: smaller;
 }
 .container-alta #drop-area {
   border: 2px dashed #ccc;
@@ -949,7 +969,7 @@ body {
 .container-alta .button {
   display: inline-block;
   padding: 10px;
-  background: #ccc;
+  background: #8075FF;
   cursor: pointer;
   border-radius: 5px;
   border-radius: 1px solid #ccc;
@@ -964,7 +984,7 @@ body {
   vertical-align: middle;
 }
 .container-alta #drop-area.highlight {
-  border-color: purple;
+  border-color: #8075FF;
 }
 
 .section-carrito {
@@ -1040,12 +1060,11 @@ body {
 }
 
 .carrito__table {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   font-size: 15px;
   font-weight: 800;
+  padding: 5px;
 }
 
 .tr-principales {
@@ -1054,9 +1073,18 @@ body {
   padding: 10px;
 }
 
+.tr-producto-carrito {
+  background-color: #F2F4FF;
+  align-items: center;
+  justify-content: center;
+}
+
 .carrito__table td {
   text-align: center;
-  border-bottom: #8075FF 1px solid;
+}
+
+th, td {
+  padding: 5px;
 }
 
 .botonBorrarProducto {
@@ -1082,6 +1110,8 @@ body {
 .cantidad {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
 .contenedorBotonesAgregarQuitar {

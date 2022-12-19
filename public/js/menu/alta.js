@@ -5,7 +5,7 @@ class FormularioAlta {
   camposValidos = [false, false, false, false, false, false]
   regExpValidar = [
     /^.+$/, // regexp nombre
-    /^.+$/, // regexp precio
+    /^[0-9]+$/, // regexp precio
     /^[0-9]+$/, // regexp stock
     /^.+$/, // regexp marca
     /^.+$/, // regexp categoria

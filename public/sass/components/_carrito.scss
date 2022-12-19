@@ -76,12 +76,11 @@
 }
 
 .carrito__table{
-    width:100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     font-size: 15px;
     font-weight: 800;
+    padding: 5px;
 }
 
 .tr-principales{
@@ -90,9 +89,18 @@
     padding: 10px;
 }
 
+.tr-producto-carrito{
+    background-color: $color2;
+    align-items: center;
+    justify-content: center;
+}
+
 .carrito__table td{
     text-align: center;
-    border-bottom: $color5 1px solid;
+}
+
+th, td{
+    padding: 5px;
 }
 
 .botonBorrarProducto{
@@ -119,6 +127,8 @@
 .cantidad{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 .contenedorBotonesAgregarQuitar{
