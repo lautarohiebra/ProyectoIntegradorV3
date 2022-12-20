@@ -33,6 +33,7 @@ function initCarrito() {
         try {
             if(mostrarCarrito) {
                 await renderTablaCarrito(carritoController.carrito)
+                carritoController.cargaValorInicial()
             } else {
                 elemSectionCarrito.classList.remove('section-carrito--visible')
             }
