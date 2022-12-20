@@ -120,6 +120,22 @@ class ProductoModelMongoDB {
             return {}
         }   
     }
+/* TODO: hacer search system */
+    /* Search */
+/* 
+    async buscarProducto(valorBusqueda) {
+        try {
+            valorBusqueda=document.querySelector("#busqueda").innerHTML
+            console.log(valorBusqueda);
+            const producto = await ProductoModel.find({nombre: {$regex:valorBusqueda}}).lean()
+            return producto
+        } catch (error) {
+            console.log(`Error en buscarProducto: ${error}`)
+            return {}
+        }
+        
+    }
+ */
 }
 
 module.exports = ProductoModelMongoDB

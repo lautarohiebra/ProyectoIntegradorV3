@@ -42,8 +42,8 @@ class ProductoController extends ProductoModel {
     
         const index = this.productos.findIndex(producto => producto.id == productoBorrado.id)
         this.productos.splice(index, 1)
-    
-        renderTablaAlta(null, this.productos)
+        
+        this.renderTablaAlta(null, this.productos)  
     }
 }
 
