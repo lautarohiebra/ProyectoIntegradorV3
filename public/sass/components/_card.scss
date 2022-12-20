@@ -7,7 +7,6 @@
     max-width: 300px;
     height: 400px;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
     transition: all .2s;
     border-radius: 15px 15px 0 0;
 
@@ -21,7 +20,7 @@
         -moz-transform-origin: bottom;
         -webkit-transform-origin: bottom;
         transform-origin: bottom;
-        box-shadow: 0 7px 15px rgba(255, 255, 255, 0.877);
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.507);
         transition: all .5s;
         cursor: auto;
     }

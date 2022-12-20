@@ -7,6 +7,7 @@ class ProductoController extends ProductoModel {
 
     async obtenerProductos() { 
         this.productos = await productoService.obtenerProductosService()
+        console.log(this.productos);
         return this.productos
     }
     
@@ -29,7 +30,7 @@ class ProductoController extends ProductoModel {
         // console.log(productoActualizado)
     
         const index = this.productos.findIndex(producto => producto.id == productoActualizado.id)
-        this.productos.splice(index,1,productoActualizado)
+        this.productos.splice(index, 1,productoActualizado)
     
         renderTablaAlta(null, this.productos)
     
@@ -40,10 +41,11 @@ class ProductoController extends ProductoModel {
     
         let productoBorrado = await productoService.borrarProductoService(id)
     
-        const index = this.productos.findIndex(producto => producto.id == productoBorrado.id)
+        const index = this.productos.findIndex(producto => producto.id == productoBorrado._id)
+        console.log(index);
         this.productos.splice(index, 1)
         
-        this.renderTablaAlta(null, this.productos)  
+        renderTablaAlta(null, this.productos) 
     }
 }
 

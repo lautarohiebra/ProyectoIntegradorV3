@@ -41,6 +41,7 @@ class ProductoModelMongoDB {
         }
         else {
             obj.id = obj[this.pk] // this._id => this.id
+
         }
 
         return obj
@@ -122,11 +123,9 @@ class ProductoModelMongoDB {
     }
 /* TODO: hacer search system */
     /* Search */
-/* 
+
     async buscarProducto(valorBusqueda) {
         try {
-            valorBusqueda=document.querySelector("#busqueda").innerHTML
-            console.log(valorBusqueda);
             const producto = await ProductoModel.find({nombre: {$regex:valorBusqueda}}).lean()
             return producto
         } catch (error) {
@@ -135,7 +134,7 @@ class ProductoModelMongoDB {
         }
         
     }
- */
+
 }
 
 module.exports = ProductoModelMongoDB

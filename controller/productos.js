@@ -33,7 +33,7 @@ const actualizarProducto = async (req, res) => {
 
 /* ------------------------- borrarProducto ------------------------- */
 const borrarProducto = async (req, res) => {
-    const { id } = req.params
+    const {id} = req.params
 
     if (!id) {
         return res.status(400).json(
