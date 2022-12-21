@@ -976,6 +976,7 @@ footer p {
 }
 .container-alta td {
   text-align: center;
+  max-height: 200px;
 }
 .container-alta table {
   width: 90%;
