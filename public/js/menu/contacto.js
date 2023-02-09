@@ -1,3 +1,7 @@
+function initContacto() {
+    console.warn('initContacto()')
+}
+
 class FormularioContacto{
     campos = null
     formulario = null

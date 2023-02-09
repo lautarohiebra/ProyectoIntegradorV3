@@ -9,10 +9,8 @@
   </head>
   <body>
     <header class="main-header">
-      <input type="checkbox" id="menu" />
-
-      <nav class="nav-bar">
-        <ul class="nav-bar__nav-list">
+      <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-bar__nav-list" id="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
             <a href="" id="inicio" class="nav-bar__nav-link">Inicio</a>
           </li>
@@ -40,11 +38,9 @@
           <div class="carritoBubble"></div>
         </div>
         <div class="menu-toggle">
-          <label for="menu" class="menu-toggle__label">
-            <span class="menu-toggle__top-bread"></span>
-            <span class="menu-toggle__meat"></span>
-            <span class="menu-toggle__bottom-bread"></span>
-          </label>
+          <div id="menu-toggle" class="menu-toggle_button">
+            <img src="img/svgs/hamburguer-menu.svg" alt="Menu toggle hamburguer menu logo" id="menu-toggle-img">
+          </div>
         </div>
       </div>
       <!-- search-bar -->
@@ -85,6 +81,7 @@
     <!-- <script src="js/controladores/contacto.js"></script> -->
 
     <!-- Menúes -->
+    <script src="js/menu/header.js"></script>
     <script src="js/menu/alta.js"></script>
     <script src="js/menu/nosotros.js"></script>
     <!-- <script src="js/menu/contacto.js"></script> -->

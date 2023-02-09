@@ -37,7 +37,7 @@ class Main {
             initNosotros()
         }
         else if( id === 'contacto' ) {
-            initContacto()
+            console.log("Mostrando pestaña de Contacto");
         }
     }
 
@@ -50,7 +50,7 @@ class Main {
         let main = document.querySelector('main')
         main.innerHTML = plantilla
 
-        // Carga dle código script (JS) de la plantilla
+        // Carga del código script (JS) de la plantilla
         this.initJS(id)
     }
 
